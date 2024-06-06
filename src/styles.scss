@@ -8,6 +8,7 @@
 
 html {
 	width: 100%;
+	height: 100%;
 	overflow-x: hidden;
 }
 
@@ -22,6 +23,8 @@ body {
 
 body {
 	width: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 h1,
@@ -52,6 +55,10 @@ a {
 	cursor: pointer;
 }
 
+p {
+	margin: 0;
+}
+
 strong,
 b {
 	color: inherit;
@@ -60,21 +67,15 @@ b {
 }
 
 .container {
-	// position: relative;
-	// background-image: url(../images/main-bg_1440x1024.png);
-	// background-position: center;
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-attachment: fixed;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 
-	@include media-down(500px) {
-		background-image: none;
-	}
+	// @include media-down(500px) {
+	// 	background-image: none;
+	// }
 }
 
-.wrapper {
-	width: 90%;
-}
+// .wrapper {
+// 	width: 90%;
+// }
