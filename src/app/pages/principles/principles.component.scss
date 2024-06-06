@@ -8,7 +8,6 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
-	margin-bottom: 220px;
 
 	&__title {
 		font-weight: 700;
@@ -48,12 +47,15 @@
 		top: 38px;
 		left: 260px;
 		z-index: 10;
+		transition: all 1s ease-out;
 
-		@include media-down(1300px) {
-			display: none;
+		@include media-down(1200px) {
+			left: 180px;
+			top: 28px;
 		}
 
-		&__graph-img {
+		@include media-down(1000px) {
+			display: none;
 		}
 	}
 	&__wrapper__money {
@@ -69,12 +71,15 @@
 		right: 160px;
 		top: -30px;
 		z-index: 10;
+		transition: all 1s ease-out;
 
-		@include media-down(1300px) {
-			display: none;
+		@include media-down(1200px) {
+			right: 190px;
+			top: -30px;
 		}
 
-		&__money-img {
+		@include media-down(1000px) {
+			display: none;
 		}
 	}
 
@@ -85,7 +90,7 @@
 		top: -80px;
 		transform: rotate(8deg);
 
-		@include media-down(1300px) {
+		@include media-down(1000px) {
 			display: none;
 		}
 	}
