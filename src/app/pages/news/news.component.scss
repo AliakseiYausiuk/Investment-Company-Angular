@@ -3,12 +3,11 @@
 @import "../../../assets/styles/btn";
 
 .news-section {
-	margin-bottom: 170px;
 	&__header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 
 		@include media-down(768px) {
 			.btn {
