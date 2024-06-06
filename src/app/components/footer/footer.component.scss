@@ -1,0 +1,43 @@
+@import "../../../assets/styles/mixins";
+
+.footer {
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+	@include media-down(1300px) {
+		padding: 8px 15px;
+	}
+
+	&__wrapper-link {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&__icon {
+			font-size: 24px;
+			color: rgba(255, 255, 255, 0.2);
+			transform: rotate(90deg);
+		}
+
+		&__link {
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 19px;
+		}
+	}
+
+	&__wrapper-info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 150px;
+
+		&__item {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+		}
+	}
+}
