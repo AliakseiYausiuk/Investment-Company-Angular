@@ -3,12 +3,13 @@
 @import "../../../assets/styles/btn";
 
 .contacts-section {
+	height: 100%;
 	&__banner {
 		display: flex;
 		justify-content: space-around;
 		background: linear-gradient(rgb(44, 43, 74), rgba(122, 118, 255, 0.1));
 		padding: 30px 20px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
 		border-radius: 4px;
 
 		@include media-down(768px) {
