@@ -3,28 +3,62 @@
 @import "../../../assets/styles/btn";
 
 .header {
-	padding: 8px 0;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-
+	gap: 25px;
+	padding: 10px 0;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 60px;
 
 	@include media-down(1300px) {
 		padding: 8px 15px;
 	}
 
+	@include media-down(700px) {
+		gap: 10px;
+
+		.btn {
+			display: none;
+		}
+	}
+
+	@include media-down(700px) {
+		margin-bottom: 20px;
+	}
+
+	&__logo-wrapper {
+		flex: 2;
+	}
+
 	&__nav {
-		width: 50%;
+		display: flex;
+		gap: 25px;
+		align-items: center;
+
+		@include media-down(700px) {
+			gap: 10px;
+		}
 		&__list {
-			height: 100%;
 			display: flex;
-			justify-content: space-between;
+			align-items: center;
+			gap: 30px;
+
+			@include media-down(700px) {
+				gap: 10px;
+			}
 
 			&__item {
-				display: flex;
-				align-items: center;
-				justify-content: center;
+				cursor: pointer;
 			}
+		}
+	}
+
+	&__avatar {
+		display: none;
+
+		@include media-down(700px) {
+			display: block;
 		}
 	}
 }
