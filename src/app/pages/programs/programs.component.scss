@@ -4,7 +4,7 @@
 
 .programs-section {
 	position: relative;
-	margin-bottom: 180px;
+	height: 100%;
 
 	&__pagination {
 		position: absolute;
@@ -59,7 +59,7 @@
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 24px;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 
 		@include media-down(768px) {
 			margin-bottom: 30px;
@@ -68,8 +68,9 @@
 
 	&__item {
 		display: flex;
-		gap: 5px;
-		height: 312px;
+		flex-wrap: wrap;
+		gap: 10px;
+
 		overflow: hidden;
 
 		&__card {
@@ -81,6 +82,7 @@
 			justify-content: center;
 			flex: 1;
 			min-width: 250px;
+			padding: 10px;
 
 			&__number {
 				font-size: 92px;
