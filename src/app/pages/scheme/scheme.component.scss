@@ -5,7 +5,7 @@
 .scheme-work-section {
 	position: relative;
 	display: flex;
-	margin-bottom: 200px;
+	height: 100%;
 
 	@include media-down(900px) {
 		flex-direction: column;
